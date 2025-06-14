@@ -1,0 +1,62 @@
+@import './variables.scss';
+
+// Mixin para botones
+@mixin button-base{
+    border: none;
+    border-radius: $border-radius-sm;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    &:disabled{
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+@mixin button-size($size: 'md') {
+  @if $size == 'sm' {
+    padding: $spacing-xs $spacing-md;
+    font-size: 14px;
+  } @else if $size == 'lg' {
+    padding: $spacing-md $spacing-lg;
+    font-size: 16px;
+  } @else {
+    padding: $spacing-sm $spacing-md;
+    font-size: 14px;
+  }
+}
+
+@mixin button-variant($color: 'primary') {
+  @if $color == 'primary' {
+    background: $primary-blue;
+    color: white;
+    
+    &:hover:not(:disabled) {
+      background: $primary-blue-dark;
+      transform: translateY(-1px);
+    }
+  } @else if $color == 'success' {
+    background: $success-green;
+    color: white;
+    
+    &:hover:not(:disabled) {
+      background: darken($success-green, 10%);
+    }
+  } @else if $color == 'danger' {
+    background: $danger-red;
+    color: white;
+    
+    &:hover:not(:disabled) {
+      background: darken($danger-red, 10%);
+    }
+  }
+}
+
+
+
+

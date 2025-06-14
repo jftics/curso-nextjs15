@@ -1,0 +1,31 @@
+
+@use '../styles/variables.scss' as *;
+@use '../styles/mixins.scss' as *;
+
+.button{
+    @include button-base;
+
+    &.sm{
+        @include button-size('sm');
+    }
+    &.md {
+        @include button-size('md');
+    }
+    
+    &.lg {
+        @include button-size('lg');
+    }
+
+    // Variantes de color
+    &.primary{
+        @include button-variant('primary')
+    }
+    &.success {
+        @include button-variant('success');
+    }
+    
+    &.danger {
+        @include button-variant('danger');
+    }
+}
+
