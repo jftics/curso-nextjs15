@@ -1,0 +1,40 @@
+{
+  "HomePage": {
+    "title": "Bienvenue dans notre application !",
+    "subtitle": "Une application multilingue avec Next.js",
+    "description": "Cette application démontre comment implémenter l'internationalisation dans Next.js 15.",
+    "currentLanguage": "Langue actuelle : {locale}",
+    "changeLanguage": "Changer de langue",
+    "navigation": {
+      "home": "Accueil",
+      "about": "À propos",
+      "contact": "Contact"
+    }
+  },
+  "AboutPage": {
+    "title": "À propos de nous",
+    "content": "Nous sommes une équipe dédiée à créer des applications web incroyables.",
+    "team": "Notre équipe",
+    "mission": "Notre mission est de rendre le développement web plus accessible."
+  },
+  "ContactPage": {
+    "title": "Contactez-nous",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer",
+      "placeholder": {
+        "name": "Votre nom complet",
+        "email": "votre@email.com",
+        "message": "Écrivez votre message ici..."
+      }
+    }
+  },
+  "Common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "back": "Retour",
+    "next": "Suivant"
+  }
+}
